@@ -1,0 +1,186 @@
+/* 基础样式 */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+line-height: 1.6;
+background: #f8f9fa;
+color: #2c3e50;
+}
+
+/* 头部样式 */
+header {
+background: linear-gradient(135deg, #004a99, #0066cc);
+color: white;
+padding: 2rem 1rem;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+font-size: 2.5rem;
+margin-bottom: 0.5rem;
+}
+
+.en-name {
+font-size: 1.2rem;
+color: #aad4ff;
+letter-spacing: 1px;
+margin: 0.5rem 0;
+}
+
+/* 导航栏 */
+nav {
+background: #2c3e50;
+padding: 1rem;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 0.8rem 1.5rem;
+transition: all 0.3s ease;
+border-radius: 4px;
+margin: 0 5px;
+}
+
+nav a:hover {
+background: #3b5168;
+transform: translateY(-2px);
+}
+
+/* 内容区域 */
+.content {
+max-width: 1200px;
+margin: 2rem auto;
+padding: 0 1rem;
+}
+
+section {
+margin: 3rem 0;
+}
+
+h2 {
+color: #004a99;
+font-size: 2rem;
+margin-bottom: 1.5rem;
+padding-bottom: 0.5rem;
+border-bottom: 3px solid #004a99;
+}
+
+/* 卡片样式 */
+.card {
+background: white;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+margin: 1rem 0;
+}
+
+.service-card {
+background: white;
+padding: 1.5rem;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+transition: transform 0.3s ease;
+text-align: center;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}
+
+.service-card h3 {
+color: #004a99;
+margin-bottom: 1rem;
+}
+
+.card-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+margin: 2rem 0;
+}
+
+/* 联系卡片 */
+.contact-card {
+background: white;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact-card ul {
+list-style: none;
+}
+
+.contact-card li {
+padding: 0.8rem 0;
+border-bottom: 1px solid #eee;
+}
+
+.contact-card a {
+color: #004a99;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+color: #0066cc;
+}
+
+/* 高亮文字 */
+.highlight {
+color: #004a99;
+font-weight: 600;
+padding: 0 2px;
+}
+
+/* 页脚 */
+footer {
+background: #2c3e50;
+color: white;
+padding: 1.5rem 0;
+margin-top: 3rem;
+}
+
+.footer-content {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 1rem;
+text-align: center;
+}
+
+footer p {
+margin: 0.5rem 0;
+font-size: 0.9rem;
+color: #dfe6e9;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+nav {
+padding: 0.5rem;
+}
+
+nav a {
+display: block;
+margin: 5px 0;
+text-align: center;
+}
+
+.card-container {
+grid-template-columns: 1fr;
+}
+
+header h1 {
+font-size: 2rem;
+}
+}
